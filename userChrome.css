@@ -1,37 +1,34 @@
-#TabsToolbar, .tabbrowser-tab {max-height: 24px !important;
+
+/* Make tabs thin */
+#TabsToolbar, .tabbrowser-tab {
+    max-height: 24px !important;
     margin-left: 1px !important;
     margin-right: 1px !important;}
 
+/* Make navbar not seen */
 #nav-bar {
-
      min-height: 0 !important;
-
      max-height: 0 !important;
-
      height: 0 !important;
-
      transform: scaleY(0) !important;
-
      transform: scaleY(0) !important;
-
      transition: all 0.1s ease !important;
-
  }
-.tabbrowser-tab[fadein]{ max-width: 100vw !important }
 
+/* Make tabs take up entire width of bar */
+ .tabbrowser-tab[fadein] { 
+max-width: 100vw !important 
+}
+
+/* Get rid of close tab icons and container underlines */
 #TabsToolbar .tabbrowser-tab[selected] .tab-line {
-
     display: none !important;
-
 }
 
 #tabbrowser-tabs .tabbrowser-tab .tab-close-button {
-
 	display:none !important;
+}
 
-    }
 .tabbrowser-tab[usercontextid] .tab-bottom-line {
-
     display: none !important;
-
 }
